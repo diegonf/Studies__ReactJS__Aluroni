@@ -1,0 +1,24 @@
+@import "./variaveis";
+@import "./breakpoints";
+
+.container {
+  padding: 50px $padding-horizontal;
+  @media (max-width: $mobile) {
+    padding: 50px $padding-horizontal-mobile;
+  }
+  @media (min-width: $mobile) and (max-width: $desktop_sm) {
+    padding: 50px $padding-horizontal-sm;
+  }
+  @media (min-width: $desktop_sm) {
+    padding: 50px $padding-horizontal-md;
+  }
+}
+.titulo {
+  color: $dark;
+  font-size: 3rem;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 1.5rem;
+  }
+}
